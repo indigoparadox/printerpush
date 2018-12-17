@@ -1,0 +1,7 @@
+[ldap]
+server=ldap://exampledc01.example.local
+bindname=ricohsync@example.local
+bindpw=
+basedn=dc=example,dc=local
+filter=(&(objectClass=user)(memberof=cn=all employees,ou=security,ou=groups,ou=example,dc=example,dc=local))
+additions=[{"id":"Support Staff","fullname":"Support Staff","name":"Support Staff","mail":"supportstaff@example.com","tag":9}]

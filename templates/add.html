@@ -1,0 +1,34 @@
+{% extends 'page.html' %}
+{% block titlehead %}Add User{% endblock %}
+{% block content %}
+<div id="frm-add-wrapper">
+<form id="frm-add" method="POST" action="/do-add">
+ <div>
+  <label for="add-name">Name</label>
+  <input type="text" name="add-name" id="add-name" />
+ </div>
+ <div>
+  <label for="add-tag">Tag</label>
+  <select name="add-tag" id="add-tag">
+   <option value="2">AB</option>
+   <option value="3">CD</option>
+   <option value="4">EF</option>
+   <option value="5">GH</option>
+   <option value="6">IJK</option>
+   <option value="7">LMN</option>
+   <option value="8">OPQ</option>
+   <option value="9">RST</option>
+   <option value="10">UVW</option>
+   <option value="11">XYZ</option>
+  </select>
+ </div>
+ <div>
+  <label for="add-email">EMail</label>
+  <input type="text" name="add-email" id="add-email" />
+ </div>
+ <div>
+  <input type="submit" value="Submit" />
+ </div>
+</form>
+</div>
+{% endblock %}

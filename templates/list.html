@@ -1,0 +1,30 @@
+{% extends 'page.html' %}
+{% block titlehead %}List Users{% endblock %}
+{% block content %}
+<table>
+<thead>
+<tr>
+ <th>Select</th>
+ <th>Printer</th>
+ <th>ID</th>
+ <th>Tag</th>
+ <th>Name</th>
+ <th>EMail</th>
+</tr>
+</thead>
+<tbody>
+{% for user in users %}
+ <tr>
+  <td>
+   <input type="checkbox" name="sel-{{ user.id }}" id="sel-{{ user.id }}" />
+  </td>
+  <td>{{ user.printer }}</td>
+  <td>{{ user.id }}</td>
+  <td>{{ user.tagId }}</td>
+  <td>{{ user.name }}</td>
+  <td>{{ user.mailaddress }}</td>
+ </tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
