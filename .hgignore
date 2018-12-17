@@ -1,0 +1,5 @@
+glob:*.csv
+glob:.git
+glob:.gitignore
+glob:adauth.ini
+glob:printers.ini
